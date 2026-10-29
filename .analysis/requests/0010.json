@@ -1,0 +1,7 @@
+[
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x43555d"},"output":"hid-interface-selection"},
+  {"tool":"xrefs","args":{"address":"0x548890"},"output":"xrefs-key-index-xml"},
+  {"tool":"read_function_instructions","args":{"procedure":"0x4350a0"},"output":"send-command-instructions"},
+  {"tool":"xrefs","args":{"address":"0x41de30"},"output":"xrefs-worker"},
+  {"tool":"xrefs","args":{"address":"0x41d2b0"},"output":"xrefs-live-frame"}
+]

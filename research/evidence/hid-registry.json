@@ -1,0 +1,129 @@
+[
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_00\\9&31d02646&0&0000",
+    "Description": "@keyboard.inf,%hid.keyboarddevice%;HID Keyboard Device",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_00",
+      "HID\\VID_5566&PID_000A&MI_00",
+      "HID\\VID_5566&UP:0001_U:0006",
+      "HID_DEVICE_SYSTEM_KEYBOARD",
+      "HID_DEVICE_UP:0001_U:0006",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": "kbdhid"
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_01&Col01\\9&1a0c9a01&0&0000",
+    "Description": "@keyboard.inf,%hid.keyboarddevice%;HID Keyboard Device",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_01&Col01",
+      "HID\\VID_5566&PID_000A&MI_01&Col01",
+      "HID\\VID_5566&UP:0001_U:0006",
+      "HID_DEVICE_SYSTEM_KEYBOARD",
+      "HID_DEVICE_UP:0001_U:0006",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": "kbdhid"
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_01&Col02\\9&1a0c9a01&0&0001",
+    "Description": "@input.inf,%hid_device_vendor_defined_range%;HID-compliant vendor-defined device",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_01&Col02",
+      "HID\\VID_5566&PID_000A&MI_01&Col02",
+      "HID\\VID_5566&UP:FF00_U:0000",
+      "HID_DEVICE_UP:FF00_U:0000",
+      "HID_DEVICE_UPR:FF00-FFFF",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": null
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_01&Col03\\9&1a0c9a01&0&0002",
+    "Description": "@msmouse.inf,%hid.mousedevice%;HID-compliant mouse",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_01&Col03",
+      "HID\\VID_5566&PID_000A&MI_01&Col03",
+      "HID\\VID_5566&UP:0001_U:0002",
+      "HID_DEVICE_SYSTEM_MOUSE",
+      "HID_DEVICE_UP:0001_U:0002",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": "mouhid"
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_01&Col04\\9&1a0c9a01&0&0003",
+    "Description": "@hidserv.inf,%hid_device_system_consumer%;HID-compliant consumer control device",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_01&Col04",
+      "HID\\VID_5566&PID_000A&MI_01&Col04",
+      "HID\\VID_5566&UP:000C_U:0001",
+      "HID_DEVICE_SYSTEM_CONSUMER",
+      "HID_DEVICE_UP:000C_U:0001",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": null
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_01&Col05\\9&1a0c9a01&0&0004",
+    "Description": "@input.inf,%hid_device_system_control%;HID-compliant system controller",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_01&Col05",
+      "HID\\VID_5566&PID_000A&MI_01&Col05",
+      "HID\\VID_5566&UP:0001_U:0080",
+      "HID_DEVICE_SYSTEM_CONTROL",
+      "HID_DEVICE_UP:0001_U:0080",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": null
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_01&Col06\\9&1a0c9a01&0&0005",
+    "Description": "@input.inf,%hid_wireless_radio_controls%;HID-compliant wireless radio controls",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_01&Col06",
+      "HID\\VID_5566&PID_000A&MI_01&Col06",
+      "HID\\VID_5566&UP:0001_U:000C",
+      "HID_DEVICE_UP:0001_U:000C",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": null
+  },
+  {
+    "RegistryPath": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\HID\\VID_5566&PID_000A&MI_02\\9&2490dbc&0&0000",
+    "Description": "@input.inf,%hid_device_vendor_defined_range%;HID-compliant vendor-defined device",
+    "HardwareIDs": [
+      "HID\\VID_5566&PID_000A&REV_0007&MI_02",
+      "HID\\VID_5566&PID_000A&MI_02",
+      "HID\\VID_5566&UP:FF00_U:0001",
+      "HID_DEVICE_UP:FF00_U:0001",
+      "HID_DEVICE_UPR:FF00-FFFF",
+      "HID_DEVICE"
+    ],
+    "CompatibleIDs": [
+      ""
+    ],
+    "Service": null
+  }
+]

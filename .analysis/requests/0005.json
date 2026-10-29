@@ -1,0 +1,7 @@
+[
+  {"tool":"xrefs","args":{"address":"EXTERNAL:0x22"},"output":"xrefs-writefile"},
+  {"tool":"xrefs","args":{"address":"0x444122"},"output":"xrefs-writefile-thunk"},
+  {"tool":"search_procedures","args":{"pattern":"DeviceIoControl|GetOverlappedResult","mode":"regex"},"output":"hid-io-procedures"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x436780"},"output":"hid-wrapper-436780"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x436920"},"output":"hid-wrapper-436920"}
+]

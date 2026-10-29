@@ -1,0 +1,11 @@
+[
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41d2b0"},"output":"command-41d2b0"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41de30"},"output":"command-41de30"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41e170"},"output":"command-41e170"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41e6c0"},"output":"command-41e6c0"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41ef20"},"output":"command-41ef20"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41f270"},"output":"command-41f270"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41f690"},"output":"command-41f690"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41fa90"},"output":"command-41fa90"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x436bb0"},"output":"hid-input-read"}
+]

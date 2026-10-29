@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"C:\\\\Program Files (x86)\\\\Keyboard Driver 1.2\\\\DeviceDriver.exe\",\"format\":\"pe\",\"kind\":\"executable\",\"sha256\":\"c3bcfbc5c70ad40bc2a69974972064d01d57fc8eb51729b7169c93204598b35b\",\"architecture\":\"x86\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "C:\\Program Files (x86)\\Keyboard Driver 1.2\\DeviceDriver.exe",
+      "format": "pe",
+      "kind": "executable",
+      "sha256": "c3bcfbc5c70ad40bc2a69974972064d01d57fc8eb51729b7169c93204598b35b",
+      "architecture": "x86"
+    }
+  }
+}

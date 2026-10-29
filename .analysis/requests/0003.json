@@ -1,0 +1,4 @@
+[
+  {"tool":"analyze_function","args":{"procedure":"0x43623e"},"output":"hid-dynamic-loader"},
+  {"tool":"analyze_function","args":{"procedure":"0x40d4d8"},"output":"hid-device-selector"}
+]

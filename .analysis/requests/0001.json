@@ -1,0 +1,6 @@
+[
+  {"tool":"open_binary","args":{"path":"C:/Program Files (x86)/Keyboard Driver 1.2/DeviceDriver.exe","provider_id":"ghidra"},"output":"controller-open"},
+  {"tool":"search_strings","args":{"pattern":"HidD_|hid.dll|MUSIC|key_rgb|key_index","mode":"regex"},"output":"controller-hid-strings"},
+  {"tool":"xrefs","args":{"address":"EXTERNAL:0x1b4"},"output":"xrefs-getpreparsed"},
+  {"tool":"xrefs","args":{"address":"EXTERNAL:0x1b7"},"output":"xrefs-getattributes"}
+]

@@ -1,0 +1,75 @@
+{
+  "method": "PE section mapping of literal source bytes",
+  "imageBase": 4194304,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "rawSize": 1253888,
+      "rawOffset": 1024
+    },
+    {
+      "name": ".rdata",
+      "rva": 1261568,
+      "rawSize": 179200,
+      "rawOffset": 1254912
+    },
+    {
+      "name": ".data",
+      "rva": 1441792,
+      "rawSize": 30720,
+      "rawOffset": 1434112
+    },
+    {
+      "name": ".gfids",
+      "rva": 1515520,
+      "rawSize": 512,
+      "rawOffset": 1464832
+    },
+    {
+      "name": ".tls",
+      "rva": 1519616,
+      "rawSize": 512,
+      "rawOffset": 1465344
+    },
+    {
+      "name": ".rsrc",
+      "rva": 1523712,
+      "rawSize": 106496,
+      "rawOffset": 1465856
+    },
+    {
+      "name": ".reloc",
+      "rva": 1630208,
+      "rawSize": 47616,
+      "rawOffset": 1572352
+    }
+  ],
+  "anchors": [
+    {
+      "value": "HidD_SetFeature",
+      "offset": 1370816,
+      "address": "0x5504c0"
+    },
+    {
+      "value": "HidD_GetFeature",
+      "offset": 1370984,
+      "address": "0x550568"
+    },
+    {
+      "value": "HidD_GetHidGuid",
+      "offset": -1,
+      "address": null
+    },
+    {
+      "value": "hid.dll",
+      "offset": 1370808,
+      "address": "0x5504b8"
+    },
+    {
+      "value": "MUSIC_AMPLITUDE",
+      "offset": -1,
+      "address": null
+    }
+  ]
+}

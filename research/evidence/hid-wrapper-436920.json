@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_f93c727846500f46a8fa048b9dc94061a0788100d3a2101b6b47e710db467bcc\",\"subject\":{\"name\":\"DeviceDriver.exe\",\"digest\":{\"sha256\":\"c3bcfbc5c70ad40bc2a69974972064d01d57fc8eb51729b7169c93204598b35b\"},\"local_path\":\"C:\\\\Program Files (x86)\\\\Keyboard Driver 1.2\\\\DeviceDriver.exe\",\"format\":\"pe\",\"architecture\":\"x86\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"application\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v5\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86\",\"available_architectures\":[\"x86\"],\"import_mode\":\"ephemeral-source-immutable\",\"pdb_observations\":\"program-info-v5\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"function-body-call-coverage-v5\",\"function_dossier_coverage\":\"observed-facets-and-call-relationships-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"procedure_file_offset_resolution\":\"address-first-unique-target-source-mapping-v2\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-without-synthetic-entry-v2\",\"function_boundary_observations\":\"ghidra-function-boundary-limitations-v4\",\"no_return_repair\":\"disabled-windows-p0\",\"process_launch\":\"official-headless-script-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"3de5374fadd78e0d56219c4afc6b4f2efac7101ff92b72faf375fb0070bbc896\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_pseudo_code\",\"parameters\":{\"procedure\":\"0x436920\"},\"raw_result\":{\"value\":\"\\r\\nvoid __fastcall FUN_00436920(LPCSTR param_1)\\r\\n\\r\\n{\\r\\n  char cVar1;\\r\\n  int iVar2;\\r\\n  undefined4 *_Memory;\\r\\n  HANDLE pvVar3;\\r\\n  void *pvVar4;\\r\\n  undefined4 unaff_ESI;\\r\\n  undefined1 auStack_58 [4];\\r\\n  undefined4 local_54;\\r\\n  undefined2 uStack_50;\\r\\n  uint uStack_18;\\r\\n  uint local_c;\\r\\n  \\r\\n  local_c = DAT_0056000c ^ (uint)auStack_58;\\r\\n  local_54 = 0;\\r\\n  if (DAT_0057030c == '\\\\0') {\\r\\n    iVar2 = FUN_004361c0();\\r\\n    if (iVar2 < 0) {\\r\\n      if (DAT_005705ac != (HMODULE)0x0) {\\r\\n        FreeLibrary(DAT_005705ac);\\r\\n      }\\r\\n      DAT_005705ac = (HMODULE)0x0;\\r\\n      DAT_0057030c = '\\\\0';\\r\\n      __security_check_cookie(local_c ^ (uint)auStack_58);\\r\\n      return;\\r\\n    }\\r\\n    DAT_0057030c = '\\\\x01';\\r\\n  }\\r\\n  _Memory = calloc(1,0x38);\\r\\n  *_Memory = 0xffffffff;\\r\\n  _Memory[1] = 1;\\r\\n  *(undefined2 *)(_Memory + 2) = 0;\\r\\n  _Memory[3] = 0;\\r\\n  _Memory[5] = 0;\\r\\n  _Memory[6] = 0;\\r\\n  _Memory[7] = 0;\\r\\n  _Memory[8] = 0;\\r\\n  _Memory[9] = 0;\\r\\n  _Memory[10] = 0;\\r\\n  _Memory[0xb] = 0;\\r\\n  _Memory[0xc] = 0;\\r\\n  _Memory[0xd] = 0;\\r\\n  pvVar3 = CreateEventW((LPSECURITY_ATTRIBUTES)0x0,0,0,(LPCWSTR)0x0);\\r\\n  _Memory[0xd] = pvVar3;\\r\\n  pvVar3 = CreateFileA(param_1,0xc0000000,3,(LPSECURITY_ATTRIBUTES)0x0,3,0x40000080,(HANDLE)0x0);\\r\\n  *_Memory = pvVar3;\\r\\n  if (pvVar3 != (HANDLE)0xffffffff) {\\r\\n    cVar1 = (*DAT_00570f2c)(pvVar3);\\r\\n    if (cVar1 != '\\\\0') {\\r\\n      iVar2 = (*DAT_00570f30)(local_54);\\r\\n      if (iVar2 == 0x110000) {\\r\\n        *(undefined2 *)(_Memory + 2) = local_54._2_2_;\\r\\n        _Memory[3] = local_54 & 0xffff;\\r\\n        *(undefined2 *)(_Memory + 4) = uStack_50;\\r\\n        (*DAT_00570f28)(unaff_ESI);\\r\\n        pvVar4 = malloc(_Memory[3]);\\r\\n        _Memory[8] = pvVar4;\\r\\n        __security_check_cookie(uStack_18 ^ (uint)&stack0xffffff9c);\\r\\n        return;\\r\\n      }\\r\\n      FUN_00436140((int)_Memory);\\r\\n      (*DAT_00570f28)(unaff_ESI);\\r\\n      goto LAB_00436a35;\\r\\n    }\\r\\n  }\\r\\n  FUN_00436140((int)_Memory);\\r\\nLAB_00436a35:\\r\\n  CloseHandle((HANDLE)_Memory[0xd]);\\r\\n  CloseHandle((HANDLE)*_Memory);\\r\\n  LocalFree((HLOCAL)_Memory[5]);\\r\\n  free((void *)_Memory[8]);\\r\\n  free(_Memory);\\r\\n  __security_check_cookie(local_c ^ (uint)auStack_58);\\r\\n  return;\\r\\n}\\r\\n\\r\\n\",\"limitations\":[]},\"normalized_result\":\"\\r\\nvoid __fastcall FUN_00436920(LPCSTR param_1)\\r\\n\\r\\n{\\r\\n  char cVar1;\\r\\n  int iVar2;\\r\\n  undefined4 *_Memory;\\r\\n  HANDLE pvVar3;\\r\\n  void *pvVar4;\\r\\n  undefined4 unaff_ESI;\\r\\n  undefined1 auStack_58 [4];\\r\\n  undefined4 local_54;\\r\\n  undefined2 uStack_50;\\r\\n  uint uStack_18;\\r\\n  uint local_c;\\r\\n  \\r\\n  local_c = DAT_0056000c ^ (uint)auStack_58;\\r\\n  local_54 = 0;\\r\\n  if (DAT_0057030c == '\\\\0') {\\r\\n    iVar2 = FUN_004361c0();\\r\\n    if (iVar2 < 0) {\\r\\n      if (DAT_005705ac != (HMODULE)0x0) {\\r\\n        FreeLibrary(DAT_005705ac);\\r\\n      }\\r\\n      DAT_005705ac = (HMODULE)0x0;\\r\\n      DAT_0057030c = '\\\\0';\\r\\n      __security_check_cookie(local_c ^ (uint)auStack_58);\\r\\n      return;\\r\\n    }\\r\\n    DAT_0057030c = '\\\\x01';\\r\\n  }\\r\\n  _Memory = calloc(1,0x38);\\r\\n  *_Memory = 0xffffffff;\\r\\n  _Memory[1] = 1;\\r\\n  *(undefined2 *)(_Memory + 2) = 0;\\r\\n  _Memory[3] = 0;\\r\\n  _Memory[5] = 0;\\r\\n  _Memory[6] = 0;\\r\\n  _Memory[7] = 0;\\r\\n  _Memory[8] = 0;\\r\\n  _Memory[9] = 0;\\r\\n  _Memory[10] = 0;\\r\\n  _Memory[0xb] = 0;\\r\\n  _Memory[0xc] = 0;\\r\\n  _Memory[0xd] = 0;\\r\\n  pvVar3 = CreateEventW((LPSECURITY_ATTRIBUTES)0x0,0,0,(LPCWSTR)0x0);\\r\\n  _Memory[0xd] = pvVar3;\\r\\n  pvVar3 = CreateFileA(param_1,0xc0000000,3,(LPSECURITY_ATTRIBUTES)0x0,3,0x40000080,(HANDLE)0x0);\\r\\n  *_Memory = pvVar3;\\r\\n  if (pvVar3 != (HANDLE)0xffffffff) {\\r\\n    cVar1 = (*DAT_00570f2c)(pvVar3);\\r\\n    if (cVar1 != '\\\\0') {\\r\\n      iVar2 = (*DAT_00570f30)(local_54);\\r\\n      if (iVar2 == 0x110000) {\\r\\n        *(undefined2 *)(_Memory + 2) = local_54._2_2_;\\r\\n        _Memory[3] = local_54 & 0xffff;\\r\\n        *(undefined2 *)(_Memory + 4) = uStack_50;\\r\\n        (*DAT_00570f28)(unaff_ESI);\\r\\n        pvVar4 = malloc(_Memory[3]);\\r\\n        _Memory[8] = pvVar4;\\r\\n        __security_check_cookie(uStack_18 ^ (uint)&stack0xffffff9c);\\r\\n        return;\\r\\n      }\\r\\n      FUN_00436140((int)_Memory);\\r\\n      (*DAT_00570f28)(unaff_ESI);\\r\\n      goto LAB_00436a35;\\r\\n    }\\r\\n  }\\r\\n  FUN_00436140((int)_Memory);\\r\\nLAB_00436a35:\\r\\n  CloseHandle((HANDLE)_Memory[0xd]);\\r\\n  CloseHandle((HANDLE)*_Memory);\\r\\n  LocalFree((HLOCAL)_Memory[5]);\\r\\n  free((void *)_Memory[8]);\\r\\n  free(_Memory);\\r\\n  __security_check_cookie(local_c ^ (uint)auStack_58);\\r\\n  return;\\r\\n}\\r\\n\\r\\n\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.\",\"External functions and functions without an analyzable body return null; other decompiler failures remain explicit.\",\"Windows Ghidra P0 accepts native x86, x86-64, ARMNT (Thumb-2) and ARM64 PE applications and DLLs, and explicitly selected raw 6502 images; managed, hostile, sensitive, and mutable-path targets are unsupported.\",\"The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.\",\"Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically.\",\"The Ghidra Program references PDB DeviceDriver.pdb (GUID ea898f3e-ca46-4f70-bbf3-25b5ba42c9db, age (hex) 1, signature unknown, version RSDS); Ghidra reports load state unknown. Original names and types may be missing; an empty name search does not prove a procedure is absent. Use list_procedures and address-based analysis to inspect recovered functions. REA does not admit a caller-selected PDB companion.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_f93c727846500f46a8fa048b9dc94061a0788100d3a2101b6b47e710db467bcc",
+    "subject": {
+      "name": "DeviceDriver.exe",
+      "digest": {
+        "sha256": "c3bcfbc5c70ad40bc2a69974972064d01d57fc8eb51729b7169c93204598b35b"
+      },
+      "local_path": "C:\\Program Files (x86)\\Keyboard Driver 1.2\\DeviceDriver.exe",
+      "format": "pe",
+      "architecture": "x86"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v5",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "pdb_observations": "program-info-v5",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "function-body-call-coverage-v5",
+        "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-without-synthetic-entry-v2",
+        "function_boundary_observations": "ghidra-function-boundary-limitations-v4",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "3de5374fadd78e0d56219c4afc6b4f2efac7101ff92b72faf375fb0070bbc896"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x436920"
+    },
+    "raw_result": {
+      "value": "\r\nvoid __fastcall FUN_00436920(LPCSTR param_1)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  undefined4 *_Memory;\r\n  HANDLE pvVar3;\r\n  void *pvVar4;\r\n  undefined4 unaff_ESI;\r\n  undefined1 auStack_58 [4];\r\n  undefined4 local_54;\r\n  undefined2 uStack_50;\r\n  uint uStack_18;\r\n  uint local_c;\r\n  \r\n  local_c = DAT_0056000c ^ (uint)auStack_58;\r\n  local_54 = 0;\r\n  if (DAT_0057030c == '\\0') {\r\n    iVar2 = FUN_004361c0();\r\n    if (iVar2 < 0) {\r\n      if (DAT_005705ac != (HMODULE)0x0) {\r\n        FreeLibrary(DAT_005705ac);\r\n      }\r\n      DAT_005705ac = (HMODULE)0x0;\r\n      DAT_0057030c = '\\0';\r\n      __security_check_cookie(local_c ^ (uint)auStack_58);\r\n      return;\r\n    }\r\n    DAT_0057030c = '\\x01';\r\n  }\r\n  _Memory = calloc(1,0x38);\r\n  *_Memory = 0xffffffff;\r\n  _Memory[1] = 1;\r\n  *(undefined2 *)(_Memory + 2) = 0;\r\n  _Memory[3] = 0;\r\n  _Memory[5] = 0;\r\n  _Memory[6] = 0;\r\n  _Memory[7] = 0;\r\n  _Memory[8] = 0;\r\n  _Memory[9] = 0;\r\n  _Memory[10] = 0;\r\n  _Memory[0xb] = 0;\r\n  _Memory[0xc] = 0;\r\n  _Memory[0xd] = 0;\r\n  pvVar3 = CreateEventW((LPSECURITY_ATTRIBUTES)0x0,0,0,(LPCWSTR)0x0);\r\n  _Memory[0xd] = pvVar3;\r\n  pvVar3 = CreateFileA(param_1,0xc0000000,3,(LPSECURITY_ATTRIBUTES)0x0,3,0x40000080,(HANDLE)0x0);\r\n  *_Memory = pvVar3;\r\n  if (pvVar3 != (HANDLE)0xffffffff) {\r\n    cVar1 = (*DAT_00570f2c)(pvVar3);\r\n    if (cVar1 != '\\0') {\r\n      iVar2 = (*DAT_00570f30)(local_54);\r\n      if (iVar2 == 0x110000) {\r\n        *(undefined2 *)(_Memory + 2) = local_54._2_2_;\r\n        _Memory[3] = local_54 & 0xffff;\r\n        *(undefined2 *)(_Memory + 4) = uStack_50;\r\n        (*DAT_00570f28)(unaff_ESI);\r\n        pvVar4 = malloc(_Memory[3]);\r\n        _Memory[8] = pvVar4;\r\n        __security_check_cookie(uStack_18 ^ (uint)&stack0xffffff9c);\r\n        return;\r\n      }\r\n      FUN_00436140((int)_Memory);\r\n      (*DAT_00570f28)(unaff_ESI);\r\n      goto LAB_00436a35;\r\n    }\r\n  }\r\n  FUN_00436140((int)_Memory);\r\nLAB_00436a35:\r\n  CloseHandle((HANDLE)_Memory[0xd]);\r\n  CloseHandle((HANDLE)*_Memory);\r\n  LocalFree((HLOCAL)_Memory[5]);\r\n  free((void *)_Memory[8]);\r\n  free(_Memory);\r\n  __security_check_cookie(local_c ^ (uint)auStack_58);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid __fastcall FUN_00436920(LPCSTR param_1)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  undefined4 *_Memory;\r\n  HANDLE pvVar3;\r\n  void *pvVar4;\r\n  undefined4 unaff_ESI;\r\n  undefined1 auStack_58 [4];\r\n  undefined4 local_54;\r\n  undefined2 uStack_50;\r\n  uint uStack_18;\r\n  uint local_c;\r\n  \r\n  local_c = DAT_0056000c ^ (uint)auStack_58;\r\n  local_54 = 0;\r\n  if (DAT_0057030c == '\\0') {\r\n    iVar2 = FUN_004361c0();\r\n    if (iVar2 < 0) {\r\n      if (DAT_005705ac != (HMODULE)0x0) {\r\n        FreeLibrary(DAT_005705ac);\r\n      }\r\n      DAT_005705ac = (HMODULE)0x0;\r\n      DAT_0057030c = '\\0';\r\n      __security_check_cookie(local_c ^ (uint)auStack_58);\r\n      return;\r\n    }\r\n    DAT_0057030c = '\\x01';\r\n  }\r\n  _Memory = calloc(1,0x38);\r\n  *_Memory = 0xffffffff;\r\n  _Memory[1] = 1;\r\n  *(undefined2 *)(_Memory + 2) = 0;\r\n  _Memory[3] = 0;\r\n  _Memory[5] = 0;\r\n  _Memory[6] = 0;\r\n  _Memory[7] = 0;\r\n  _Memory[8] = 0;\r\n  _Memory[9] = 0;\r\n  _Memory[10] = 0;\r\n  _Memory[0xb] = 0;\r\n  _Memory[0xc] = 0;\r\n  _Memory[0xd] = 0;\r\n  pvVar3 = CreateEventW((LPSECURITY_ATTRIBUTES)0x0,0,0,(LPCWSTR)0x0);\r\n  _Memory[0xd] = pvVar3;\r\n  pvVar3 = CreateFileA(param_1,0xc0000000,3,(LPSECURITY_ATTRIBUTES)0x0,3,0x40000080,(HANDLE)0x0);\r\n  *_Memory = pvVar3;\r\n  if (pvVar3 != (HANDLE)0xffffffff) {\r\n    cVar1 = (*DAT_00570f2c)(pvVar3);\r\n    if (cVar1 != '\\0') {\r\n      iVar2 = (*DAT_00570f30)(local_54);\r\n      if (iVar2 == 0x110000) {\r\n        *(undefined2 *)(_Memory + 2) = local_54._2_2_;\r\n        _Memory[3] = local_54 & 0xffff;\r\n        *(undefined2 *)(_Memory + 4) = uStack_50;\r\n        (*DAT_00570f28)(unaff_ESI);\r\n        pvVar4 = malloc(_Memory[3]);\r\n        _Memory[8] = pvVar4;\r\n        __security_check_cookie(uStack_18 ^ (uint)&stack0xffffff9c);\r\n        return;\r\n      }\r\n      FUN_00436140((int)_Memory);\r\n      (*DAT_00570f28)(unaff_ESI);\r\n      goto LAB_00436a35;\r\n    }\r\n  }\r\n  FUN_00436140((int)_Memory);\r\nLAB_00436a35:\r\n  CloseHandle((HANDLE)_Memory[0xd]);\r\n  CloseHandle((HANDLE)*_Memory);\r\n  LocalFree((HLOCAL)_Memory[5]);\r\n  free((void *)_Memory[8]);\r\n  free(_Memory);\r\n  __security_check_cookie(local_c ^ (uint)auStack_58);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts native x86, x86-64, ARMNT (Thumb-2) and ARM64 PE applications and DLLs, and explicitly selected raw 6502 images; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically.",
+      "The Ghidra Program references PDB DeviceDriver.pdb (GUID ea898f3e-ca46-4f70-bbf3-25b5ba42c9db, age (hex) 1, signature unknown, version RSDS); Ghidra reports load state unknown. Original names and types may be missing; an empty name search does not prove a procedure is absent. Use list_procedures and address-based analysis to inspect recovered functions. REA does not admit a caller-selected PDB companion."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

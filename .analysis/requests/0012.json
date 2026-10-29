@@ -1,0 +1,5 @@
+[
+  {"tool":"xrefs","args":{"address":"0x54822c"},"output":"xrefs-interface-pattern"},
+  {"tool":"read_function_instructions","args":{"procedure":"0x40b598"},"output":"rgb-default-instructions"},
+  {"tool":"read_function_instructions","args":{"procedure":"0x41de30"},"output":"live-control-instructions"}
+]

@@ -1,0 +1,5 @@
+[
+  {"tool":"xrefs","args":{"address":"0x570f24"},"output":"xrefs-setfeature-pointer"},
+  {"tool":"xrefs","args":{"address":"0x570f20"},"output":"xrefs-getfeature-pointer"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x4362d0"},"output":"hid-open-device"}
+]

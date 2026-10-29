@@ -1,0 +1,7 @@
+[
+  {"tool":"read_function_instructions","args":{"procedure":"0x41d2b0"},"output":"live-frame-instructions"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x434c10"},"output":"hid-manager-init"},
+  {"tool":"xrefs","args":{"address":"0x436780"},"output":"xrefs-open-hid"},
+  {"tool":"xrefs","args":{"address":"0x436920"},"output":"xrefs-open-hid-alt"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x436e30"},"output":"key-index-fallback"}
+]

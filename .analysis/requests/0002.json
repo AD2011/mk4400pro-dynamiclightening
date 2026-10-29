@@ -1,0 +1,5 @@
+[
+  {"tool":"xrefs","args":{"address":"0x5504c0"},"output":"xrefs-setfeature-name"},
+  {"tool":"xrefs","args":{"address":"0x550568"},"output":"xrefs-getfeature-name"},
+  {"tool":"xrefs","args":{"address":"0x5504b8"},"output":"xrefs-hid-library"}
+]

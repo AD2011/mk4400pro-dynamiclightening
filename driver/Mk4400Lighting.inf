@@ -1,0 +1,57 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=HIDClass
+ClassGuid={745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
+Provider=%Provider%
+CatalogFile=Mk4400Lighting.cat
+DriverVer=10/21/2026,0.2.2.0
+PnpLockdown=1
+
+[DestinationDirs]
+DriverCopy=13
+
+[SourceDisksNames]
+1=%DiskName%,,,
+
+[SourceDisksFiles]
+Mk4400Lighting.sys=1
+
+[Manufacturer]
+%Provider%=Models,NTamd64.10.0...22000
+
+[Models.NTamd64.10.0...22000]
+%DeviceName%=Install,Root\MK4400Lighting
+
+[Install.NT]
+CopyFiles=DriverCopy
+
+[DriverCopy]
+Mk4400Lighting.sys
+
+[Install.NT.HW]
+AddReg=VhfFilter
+
+[VhfFilter]
+HKR,,"LowerFilters",0x00010000,"vhf"
+
+[Install.NT.Services]
+AddService=Mk4400Lighting,0x00000002,Service
+
+[Service]
+DisplayName=%ServiceName%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%13%\Mk4400Lighting.sys
+
+[Install.NT.Wdf]
+KmdfService=Mk4400Lighting,Wdf
+
+[Wdf]
+KmdfLibraryVersion=1.15
+
+[Strings]
+Provider="MK4400 Community Bridge"
+DiskName="MK4400 Lighting Driver"
+DeviceName="MK4400 Pro Dynamic Lighting (104 keys)"
+ServiceName="MK4400 Pro Lighting Kernel Driver"

@@ -1,0 +1,4 @@
+[
+  {"tool":"analyze_function","args":{"procedure":"0x4350a0"},"output":"send-command-4350a0"},
+  {"tool":"analyze_function","args":{"procedure":"0x435280"},"output":"send-command-435280"}
+]

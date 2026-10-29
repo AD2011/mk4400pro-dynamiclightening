@@ -1,0 +1,5 @@
+[
+  {"tool":"search_strings","args":{"pattern":"mi_|col0|RGB-Keyboard|RGB|MUSIC_AMPLITUDE","mode":"regex"},"output":"interface-and-rgb-strings"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41504f"},"output":"key-index-xml-parser"},
+  {"tool":"procedure_pseudo_code","args":{"procedure":"0x41d8e0"},"output":"keyboard-variant-selection"}
+]

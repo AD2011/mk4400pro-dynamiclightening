@@ -1,0 +1,8 @@
+.analysis/tools/
+.analysis/*.log
+.analysis/*.snapshot*
+.packages/
+out/
+.vs/
+*.user
+.signing/
