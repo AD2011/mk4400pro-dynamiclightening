@@ -3,12 +3,6 @@
 Version **0.2.2**: a 104-key KMDF/VHF LampArray driver with a static RGB editor
 and a small service that runs on demand.
 
-The user confirmed control through the static editor works. Version 0.2.2 fixes
-the Windows color-report compatibility issue: the observed Windows solid-color
-update now decodes identically for all 104 keys and completes hardware delivery.
-The user confirmed Windows color selection now works on the physical keyboard. See
-`research/WINDOWS-COLOR-FIX.md` for before/after evidence.
-
 ## How it works
 
 - **Saved static profile:** assign each of 104 keys an RGB color and brightness.
